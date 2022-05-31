@@ -1,0 +1,142 @@
+body {
+    background: #FFF;
+    &.has--loader {
+        .x-ajax-loader {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &.has--no-scroll {
+        height: 100%;
+        overflow: hidden;
+
+        @include mq('sm') {
+            @include rem(margin-right, 17px);
+        }
+    }
+
+    main {
+        &:not(.x-maintenance__main) {
+            
+        }
+    }
+}
+
+#vtexIdUI-global-loader {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+#vtexIdContainer {
+    position: fixed !important;
+    z-index: 9999 !important;
+}
+
+#ajaxBusy {
+    position: absolute !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translate(100%, 100%) !important;
+    will-change: transform;
+}
+
+/**
+ * Slick prevent rendering
+ */
+// Banners with lazy
+.x-main-banner__small,
+.x-main-banner__big {
+    opacity: 0;
+    visibility: hidden;
+
+    &.slick-initialized {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.x-empty-search__suggestion-shelf ul {
+    &:not(.slick-initialized) {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 23%;
+            margin: 0 1.5%;
+            width: calc(25% - 20px);
+            @include rem(margin, 0 10px);
+
+            @include mq('sm', max) {
+                width: calc(50% - 16px);
+                @include rem(margin, 0 8px);
+            }
+        }
+    }
+}
+
+// Product images
+.x-product__img-main {
+    &:not(.slick-initialized) {
+        .x-product__img-main-content {
+            &:nth-child(n + 2) {
+                @include mq('sm', max) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Titles
+
+.x-title {
+    &__main {
+        color: #D45942;
+        display: block;
+        text-align: center;
+        @include rem(font-size, 38px);
+        @include mq('sm', max) {
+            @include rem(font-size, 30px);
+        }
+    }
+    &__subdescription {
+        font-family: $font-support;
+        color: #339699;
+        font-weight: 300;
+        display: block;
+        text-align: center;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        @include rem(line-height, 15px);
+        @include rem(font-size, 14px);
+    }
+}
+
+// Arrow Nav Slick
+
+.js--arrow-prev,
+.js--arrow-next {
+    position: absolute;
+    top: 50%;
+    will-change: transform;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+    @include rem(width, 20px);
+    @include rem(height, 14px);
+    @include rem(line-height, 14px);
+    svg {
+        @include rem(width, 20px);
+        @include rem(height, 14px);
+    }
+}
+
+.js--arrow-prev {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.js--arrow-next {
+    transform: translateY(-50%);
+}

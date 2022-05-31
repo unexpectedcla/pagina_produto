@@ -1,0 +1,41 @@
+
+/**
+ * Registros dos z-indexes
+ * Ordem decrescente
+ */
+$z-indexes: (
+    /** Main popups */
+    'product-popup',
+
+    /** Common z-indexes */
+    'ajax-loader',
+    'off-canvas',
+
+    /** Header Menu */
+    'main-menu-submenu-wrapper',
+
+    /** Newsletter / Side Newsletter bar */
+    'side-newsletter-bar',
+    'side-newsletter',
+
+    // Default Overlay
+    'overlay',
+
+    'category-filter-mobile',
+    'category-filter',
+    'product-buy-btn',
+    'header-account-drop',
+    'pre-header',
+    'fixed-header-mobile',
+    'fixed-header',
+    'return-to-top',
+
+    // Desktop Menu Overlay
+    'menu-overlay',
+
+    /** Home main banners */
+    'main-banner-small-container',
+    'main-banner-controls',
+
+    'wishlist-btn',
+);

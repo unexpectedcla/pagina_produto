@@ -1,0 +1,75 @@
+
+/**
+ * General Variables
+ * Call on every SASS files
+ */
+
+$btn-height: 40px !default;
+$border-style: 1px solid $color-gray-light !default;
+$input-height: 40px !default;
+
+$color-body-text            : $color-black;
+$color-body-bg              : $color-white;
+$container-width            : 1420px;
+$off-canvas-max-width       : 95%;
+$newsletter-width           : 32px;
+$input-height               : 32px;
+$pre-header-height-mobile   : 29px;
+$header-height              : 82px;
+$preheader-height           : 24px;
+$header-height-mobile       : 55px;
+$header-height-active       : 54px;
+$header-search-input-height : 72px;
+$main-banner-padding        : 48px;
+$side-newsletter-width      : 56px;
+$grid-width                 : 110px;
+$map-mobile-height          : 210px;
+
+// Minicart
+$minicart-header-height        : 50px;
+$minicart-header-height-mobile : 54px;
+$minicart-bottom-height        : 184px;
+$minicart-bottom-height-mobile : 170px;
+
+
+// Header
+// $mobile-pre-header-height: 24px !default; // Original pre-header
+$mobile-pre-header-height: 0 !default;
+$mobile-header-height: 58px !default;
+$mobile-header-total-height: $mobile-pre-header-height + $mobile-header-height !default;
+$mobile-nav-icon-size: 54px;
+$mobile-search-input-height: 38px !default;
+
+// Category
+$category-popup-header-height: 60px !default;
+$category-bottom-height: $btn-height !default;
+
+// Ease transitions
+$ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715) !default;
+$ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1) !default;
+$ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53) !default;
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94) !default;
+$ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955) !default;
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19) !default;
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1) !default;
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1) !default;
+$ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22) !default;
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1) !default;
+$ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1) !default;
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06) !default;
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1) !default;
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1) !default;
+$ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035) !default;
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1) !default;
+$ease-in-out-expo: cubic-bezier(1, 0, 0, 1) !default;
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335) !default;
+$ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1) !default;
+$ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86) !default;
+$ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045) !default;
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275) !default;
+$ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55) !default;
+    
+$decelerate-ease : cubic-bezier(0.0, 0.0, 0.2, 1) !default;
+$accelerate-ease : cubic-bezier(0.4, 0.0, 1, 1) !default;
+

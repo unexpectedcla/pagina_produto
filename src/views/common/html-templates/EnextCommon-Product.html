@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+  <title>Loja Modelo</title>
+  <vtex:template id="EnextCommon-Head"/>
+  <vtex:metaTags/>
+  <vtex:template id="EnextCommon-Styles"/>
+  <vtex:template id="EnextCommon-ThemeScripts"/>
+  <link rel="stylesheet" type="text/css" href="/arquivos/general.css" />
+  <link rel="stylesheet" type="text/css" href="/arquivos/product.css" />
+  <vtex:template id="pngIeFix" />
+</head>
+
+<body id="produto">
+
+<div id="all">
+	<!--  SubTemplate: header -->
+	<vtex:template id="header" />
+	<!-- /SubTemplate: header -->
+	
+	<div id="sideBar">
+		<!--  Controle: imagem do produto -->
+		<vtex.cmc:ProductImage zoom="off" />
+		<!-- /Controle: imagem do produto -->
+	</div>
+	
+	<div id="content">
+		<!--  Controle: nome do produto -->
+		<h1><vtex.cmc:productName /></h1>
+		<!-- /Controle: nome do produto -->
+	
+		<!--  Controle: breve descricao do produto -->
+		<vtex.cmc:productDescriptionShort />
+		<!-- /Controle: breve descricao do produto -->
+		
+		<!--  Controle: flags -->
+		<div id="flags"><vtex.cmc:hightLight /></div>
+		<!-- /Controle: flags -->
+
+		<!--  Controle: preco do produto -->
+		<div id="productPrice"><vtex.cmc:skuPrice /></div>
+		<!-- /Controle: preco do produto -->
+	
+	    <vtex.cmc:BuyButton/>
+		
+		<!--  Controle: lista -->
+		<div id="productList" class="toRight"><vtex.cmc:giftListInsertSku /></div>
+		<!-- /Controle: lista -->
+
+		
+		<!--  Controle: servicos -->
+		<vtex.cmc:stockKeepingUnitService />
+		<!-- /Controle: servicos -->
+		
+		<!--  Controle: descricao do produto -->
+		<div id="productDescription">
+			<h2 class="title">Descrição do Produto</h2>
+			<vtex.cmc:ProductDescription />
+		</div>
+		<!-- /Controle: descricao do produto -->
+
+		<!--  Controle: especificacao do produto -->
+		<vtex.cmc:productSpecification />
+		<!-- /Controle: especificacao do produto -->
+
+		<!--  Controle: avaliacao do cliente -->
+		<vtex.cmc:UserReview />
+		<!-- /Controle: avaliacao do cliente -->
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/arquivos/menu.js"></script>
+
+</body>
+</html>

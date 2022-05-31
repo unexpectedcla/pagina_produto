@@ -1,0 +1,83 @@
+.slick-arrow {
+    border: 0;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.28);
+    cursor: pointer;
+    transition: all ease 0.4s;
+    will-change: transition;
+    z-index: 1;
+    @include rem(width, 41px);
+    @include rem(height, 41px);
+    @include mq('sm', max) {
+        top: 30%;
+    }
+    &:hover {
+        background: #f4f4f4;
+    }
+    &:focus,
+    &:active {
+        background: #FFF;
+    }
+    &::before,
+    &::after {
+        content: '';
+        background: #817E7B;
+        border-radius: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        will-change: transform;
+        transform: translate(-50%, -50%);
+    }
+    &::before {
+        @include rem(width, 17px);
+        @include rem(height, 3px);
+    }
+    &::after {
+        @include rem(width, 3px);
+        @include rem(height, 17px);
+    }
+}
+
+.slick-next {
+    @include rem(top, 190px);
+    @include rem(right, 23px);
+    @include mq('sm', max) {
+        top: 40%;
+        @include rem(right, 5px);
+    }
+}
+
+.slick-prev {
+    @include rem(top, 190px);
+    @include rem(left, 23px);
+    @include mq('sm', max) {
+        top: 40%;
+        @include rem(left, 5px);
+    }
+}
+
+.slick-dots {
+    li {
+        @include rem(width, 12px);
+        @include rem(height, 12px);
+        button {
+            background: transparent;
+            border: 1px solid #000;
+            border-radius: 50%;
+            @include rem(width, 12px);
+            @include rem(height, 12px);
+            &::before {
+                display: none;
+            }
+        }
+        &.slick-active {
+            button {
+                background: #000;
+                border: 1px solid #fff;
+                box-shadow: 0px 0px 0px 1px #000;
+            }
+        }
+    }
+}

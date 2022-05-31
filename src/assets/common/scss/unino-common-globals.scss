@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+
+@import './__config-base.scss';
+
+/**
+ * Settings
+ */
+@import './settings/_fonts.scss';
+@import './settings/_iconfonts.scss';
+
+/**
+ * Generic
+ */
+@import './generic/_reset.scss';
+@import './generic/_initialize.scss';
+
+/**
+ * Elements
+ */
+@import './elements/_root.scss';
+
+/**
+ * Module Globals
+ */
+@import './layouts/globals/__globals-base.scss';
+
+/**
+ * Utils
+ * Helper Classes & IE10+ Fallback
+ */
+@import './utils/_helpers.scss';
+@import './utils/_ie-fallback.scss';
+
+/**
+ * Slick Arrows
+ */
+@import './vendor/slick-carousel/_slick-arrows.scss';
