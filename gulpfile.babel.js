@@ -22,17 +22,5 @@ Taskerify((mix) => {
       .sass(`${SRC}/common/scss/${storeName}-common-${file}.scss`, ARCHIVES)
   );
 
-  // CSS Critical Rendering Path
-  mix
-    .sass(
-      `${SRC}/common/scss/${storeName}-common-critical.scss`,
-      `${DIST}/common/css/critical`
-    )
-    .criticalCss(
-      `${DIST}/common/css/critical/${storeName}-common-critical.css`, // Compiled CSS file (.css)
-      './dist/html/common/html-templates/sub-templates', // Folder to receive a file with inline CSS
-      `${storeName}-ThemeStyles.html` // Name of a file with inline CSS (with extension name)
-    );
-
   mix.vtex('enext');
 });
