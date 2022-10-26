@@ -11,7 +11,7 @@ const DIST = Taskerify.config.distPath;
 const ARCHIVES = './dist/arquivos';
 
 const storeName = 'enext';
-const commomFiles = [/* 'product', */ 'globals'];
+const commomFiles = [ 'product-clarisse', 'header-clarisse', 'footer-clarisse',  /*'globals'*/];
 
 Taskerify((mix) => {
   

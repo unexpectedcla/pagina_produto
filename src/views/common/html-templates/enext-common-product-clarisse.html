@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><vtex.cmc:productName/></title>
+    <vtex:metaTags/>
+     <vtex:template id="EnextCommon-Styles"/>
+    <vtex:template id="EnextCommon-ThemeScripts"/>
+    <link rel="stylesheet" type="text/css" href="/arquivos/enext-common-product-clarisse.css" />
+    <vtex:template id="pngIeFix" />
+</head>
+
+<body>
+    
+    <!--  SubTemplate: header -->
+    <vtex:template id="enext-common-header-clarisse" />
+
+
+   <!--  Principal -->
+    <div class="container">
+        <div class="breadcrumb"><vtex.cmc:breadCrumb/></div>
+
+        <!--  Imagem do Produto -->   
+        <div class="container_produto">
+            <div class="produto_imagem">
+                <vtex.cmc:ProductImage zoom="off" />
+            </div>
+            
+            
+            <!--  Dados do Produto -->
+            <div class="produto_dados">
+                <h1> <vtex.cmc:productName/> </h1>
+                <div id="produto_valor">
+                <vtex.cmc:skuPrice />
+                </div>
+                
+
+                <div class="tamanho">
+                    <p>Tamanho</p>
+                    <select name="tamanho" id="tamanho">
+                    </select>
+                    
+                </div>
+
+                <div class="quantidade">
+                    <vtex.cmc:stockKeepingUnitAmountAndUnitSelection />
+                </div>
+
+                <div class="frete">
+                    <p>Calcular Frete e Prazo de Entrega</p>
+                    <input type="text" id="cep" maxlength="9" placeholder="CEP" />
+                    <button id="calcular">CALCULAR</button>
+                    <div id="valorFrete"></div>
+                </div>
+                <div class="adicionar">
+                <button id="adicionar">ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--  Descrição do Produto -->   
+        <div class="descricao_dados">
+            <h2>Informações do produto</h2>
+            <vtex.cmc:ProductDescription/>
+
+        </div>
+
+
+        <!--  Produtos Relacionados -->   
+        <div class ="relacionados">
+            <h2>Produtos relacionados</h2>
+            <div class="carrossel">
+                <button class="slide-arrow" id="slide-arrow-prev">
+                    &#8249;
+                </button>
+                <div class="cards">
+                    <vtex:contentPlaceHolder id="prateleira"/>
+                </div>
+                <button class="slide-arrow" id="slide-arrow-next">
+                    &#8250;
+                </button>
+            </div>
+        </div>
+        
+
+
+    </div>
+    
+    
+    <!--  SubTemplate: footer -->
+    <vtex:template id="enext-common-footer-clarisse" />
+   
+
+    <script type="text/javascript" src="/arquivos/enext-common-product-clarisse.js"></script>
+</body>
+</html>
